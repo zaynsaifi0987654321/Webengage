@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title></title>
+   </head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form id="form" class="user-form">
+            <div class="form-control">
+                <label for="username">User ID :</label>
+                <input class="username-input" type="text" placeholder="Enter the username" id ="userid" required />  
+                
+            </div>
+            <div class="form-control">
+               <label for="First Nme">First Name :</label>
+               <input class="username-input" type="text" placeholder="Enter the First Name" id ="firstname" required/>  
+               
+           </div>
+           <div class="form-control">
+            <label for="Last Name">Last Name :</label>
+            <input class="username-input" type="text" placeholder="Enter the Last Name" id ="lastname" required/>  
+            
+        </div>
+            <div class="form-control">
+                <label for="email">Email :</label>
+                <input type="email" placeholder="Email Address" class="email-input" id ="email" required/>
+                
+            </div>
+            <div class="form-control">
+                <label for="phNumber">Phone Number :</label>
+                <input class="phNumber-input" type="t" placeholder="Mobile number" id ="mobile" required/>
+            </div>
+            <div class="form-control">
+                <label for="dob">Date of Birth :</label>
+                <input class="dob-input" type="date" id="dob" required/>
+                
+            </div>
+            <div class="form-control">
+               <label for="Gender">Gender :</label>
+               <input class="username-input" type="text" placeholder="Enter the Gender" id ="gender" required/>  
+               
+           </div>
+           <div class="form-control">
+            <label for="Company">Company Name :</label>
+            <input class="username-input" type="text" placeholder="Enter the Company Name" id ="company" required/>  
+            
+        </div>
+            <button class="login-button" onClick="Login()">Login</button>
+        </form>
+        <div>
+        </div>
+        <script>
+
+function Login()
+  {
+        var userid=document.getElementById("userid").value;
+        var firstname=document.getElementById("firstname").value;
+        var lastname=document.getElementById("lastname").value;
+        var email=document.getElementById("email").value;
+        var phone=document.getElementById("mobile").value;
+        var gender=document.getElementById("gender").value;
+        var dob=document.getElementById("dob").value; 
+  }
+        </script>
+    </div>
+    
+        
+
+</body>
+</html>

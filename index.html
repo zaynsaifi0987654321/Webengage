@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saifiee</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <script id='_webengage_script_tag' type='text/javascript'>
+        var webengage;!function(w,e,b,n,g){function o(e,t){e[t[t.length-1]]=function(){r.__queue.push([t.join("."),
+        arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="webPersonalization feedback survey notification notificationInbox".split(z),c="options render clear abort".split(z),p="Prepare Render Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);if(!r||!r.__v){for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i < l.length;i++)o(r,[l[i]]);for(i=0;i < a.length;i++){for(r[a[i]]={},s=0;s < c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s < p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i < u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src=("https:"==e.location.protocol?"https://widgets.in.webengage.com":"http://widgets.in.webengage.com")+"/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})}}(window,document,"webengage");webengage.init("in~311c46c7");
+        </script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="Home.html"><img src="icon.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html">HOME</a></li>
+                    <li><a href="Event.html">Events</a></li>
+                    <li><a href="login.html">Login</a></li>
+                
+                </ul>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </div>
+            <div class="text-box">
+                <h1>Welcome</h1>
+                <p>Let's Play</p>
+                <a href="login.html" class="hero-btn">Login</a>
+            </div>
+        </nav>
+    </section>
+<!-- songs -->
+<section class="Songs">
+    <h1>Let's Play The Songs</h1>
+    <div class="row">
+        <div class="songs-col">
+            <img src="2.jpg">
+            <a href="jass manak.html">iko heel de nal</a>
+        </div>
+        <div class="songs-col">
+            <img src="tera-hua-cash-500-500.jpg" >
+            <a href="tera hua.html">Tera Hua</a>
+        </div>
+        <div class="songs-col">
+            <img src="Zoom.jpg">
+            <a href="zoom.html">Zoom</a>
+        </div>
+</section>
+<!-- ----------Footer --------->
+
+<section class="Footer">
+
+</section>
+
+<!-- ---------javaScript for the menu------------ -->
+<script>
+    var navlinks = document.getElementById("navlinks")
+    function  showMenu(){
+        navlinks.style.right="0";
+    }
+    function  hideMenu(){
+        navlinks.style.right="-200px";
+    }
+
+</script>    
+</body>
+</html>

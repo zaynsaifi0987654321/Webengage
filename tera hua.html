@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>music website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="music-container">
+            <h2 id="title">Tera Hua</h2>
+            <h3 id="artist">Arijit Singh.</h3>
+            <div class="img-container">
+                <img src="tera-hua-cash-500-500.jpg" alt="">
+            </div>
+            <audio src="Tera Hua Cash 320 Kbps.mp3" ></audio>
+
+
+            <!-- control -->
+            <div class="music-control">
+                <!-- <i class="fa fa-backward" id ="prev" title="previous"></i> -->
+                <i class="fa fa-play main_button" id ="play" title="play"></i>
+                <!-- <i class="fa fa-forward" id ="next" title="next"></i> -->
+
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        const music = document.querySelector('audio');
+        const img = document.querySelector('img');
+        const play = document.getElementById('play');
+        
+        play.onclick = function()
+        {
+            if(music.paused)
+            {
+                music.play();
+                play.classList.replace("fa-pause",'fa-play');
+                img.classList.add('animation');
+                
+            }
+            else
+            {
+                music.pause();
+                play.classList.replace('fa-play',"fa-pause");
+                img.classList.add('stop');
+            }
+        }
+
+    </script>
+</body>
+</html>

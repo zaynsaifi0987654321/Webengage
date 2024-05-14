@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Event.css">
+    <title></title>
+   </head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Raised an Events</h2>
+        </div>
+        <form id="form" class="user-form">
+            <div class="form-control">
+                <label for="Events">Event Name :</label>
+                <input class="username-input" type="text" placeholder="Enter the Event Name" id ="Event" required />  
+                
+            </div>
+            <div class="form-control">
+               <label for="Eventattribute">Event Attribute :</label>
+               <input class="username-input" type="text" placeholder="Enter the Event" id ="EventAttribute1" required/>
+               <input class="username-input" type="text" placeholder="Enter the Value" id ="EventValue1" required/>  
+           </div>
+           <div class="form-control">
+            <label for="Eventattribute">Event Attribute :</label>
+            <input class="username-input" type="text" placeholder="Enter the Event" id ="EventAttribute2" required/>
+            <input class="username-input" type="text" placeholder="Enter the Value" id ="EventValue2" required/>  
+        </div>
+        <div class="form-control">
+            <label for="Eventattribute">Event Attribute :</label>
+            <input class="username-input" type="text" placeholder="Enter the Event" id ="EventAttribute3" required/>
+            <input class="username-input" type="text" placeholder="Enter the Value" id ="EventValue3" required/>  
+        </div>
+        <div class="form-control">
+            <label for="Eventattribute">Event Attribute :</label>
+            <input class="username-input" type="text" placeholder="Enter the Event" id ="EventAttribute4" required/>
+            <input class="username-input" type="number" placeholder="Enter the Value in number" id ="EventValue4" required/>  
+        </div>
+   
+            <button class="Event-button" onClick="Event()">Hit Event</button>
+        </form>
+        <div>
+        </div>
+        <script>
+
+function Event()
+  {
+        var EventName=document.getElementById("Event").value;
+        
+  }
+        </script>
+    </div>
+</body>
+</html>
