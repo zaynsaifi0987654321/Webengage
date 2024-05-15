@@ -67,6 +67,15 @@ function Login()
         var phone=document.getElementById("mobile").value;
         var gender=document.getElementById("gender").value;
         var dob=document.getElementById("dob").value; 
+
+        webengage.Login(userid);
+        webengage.user.setAttribute('we_email', email);
+        webengage.user.setAttribute('we_birth_date', dob);
+        webengage.user.setAttribute('we_phone', phone);
+        webengage.user.setAttribute('we_first_name', firstname);
+        webengage.user.setAttribute('we_last_name', lastname);
+        webengage.user.setAttribute('we_whatsapp_opt_in', true); 
+        
   }
         </script>
     </div>
