@@ -68,9 +68,17 @@ function Login()
         var gender=document.getElementById("gender").value;
         var dob=document.getElementById("dob").value; 
 
+      function convertDateFormat(dateString) {
+            var [day, month, year] = dateString.split("-");
+            return `${year}-${month}-${day}`;
+         }
+
+        var dobInput = dob;
+        var formattedDob = convertDateFormat(dobInput);
+
         webengage.Login(userid);
         webengage.user.setAttribute('we_email', email);
-        webengage.user.setAttribute('we_birth_date', dob);
+        webengage.user.setAttribute('we_birth_date', formattedDob);
         webengage.user.setAttribute('we_phone', phone);
         webengage.user.setAttribute('we_first_name', firstname);
         webengage.user.setAttribute('we_last_name', lastname);
