@@ -70,28 +70,18 @@ function Login(event) {
             var Email = document.getElementById("email").value;
             var Phone = document.getElementById("mobile").value;
             var Gender = document.getElementById("gender").value;
-            var Dob = document.getElementById("dob").value;
-
-
-        // function convertDateFormat(dateString) {
-        //     var [day, month, year] = dateString.split("-");
-        //     return `${year}-${month}-${day}`;
-        //  }
-
-        // var dobInput = dob;
-        // var formattedDob = convertDateFormat(dobInput);
-        // console.log(formattedDob);
+            //var Dob = document.getElementById("dob").value;
 
         alert(Firstname);
 
 
-        // webengage.Login(userid);
-        // webengage.user.setAttribute('we_email', email);
-        // webengage.user.setAttribute('we_birth_date', formattedDob);
-        // webengage.user.setAttribute('we_phone', phone);
-        // webengage.user.setAttribute('we_first_name', firstname);
-        // webengage.user.setAttribute('we_last_name', lastname);
-        // webengage.user.setAttribute('we_whatsapp_opt_in', true); 
+        webengage.Login(Userid);
+        webengage.user.setAttribute('we_email', Email);
+        webengage.user.setAttribute('we_birth_date', Dob);
+        webengage.user.setAttribute('we_phone', Phone);
+        webengage.user.setAttribute('we_first_name', Firstname);
+        webengage.user.setAttribute('we_last_name', Lastname);
+        webengage.user.setAttribute('we_whatsapp_opt_in', true); 
   }
     </script>
     </div>
