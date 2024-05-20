@@ -62,39 +62,39 @@
         </div>
         <script>
 
-function Login()
-  {
-        var Userid=document.getElementById("userid").value;
-        var Firstname=document.getElementById("firstname").value;
-        var Lastname=document.getElementById("lastname").value;
-        var Email=document.getElementById("email").value;
-        var Phone=document.getElementById("mobile").value;
-        var Gender=document.getElementById("gender").value;
-        var Bob=document.getElementById("dob").value; 
+function Login(event) {
+            event.preventDefault();
 
-       alert(Userid,Firstname,Lastname,Email,Phone,Gender,Bob);
+            var Userid = document.getElementById("userid").value;
+            var Firstname = document.getElementById("firstname").value;
+            var Lastname = document.getElementById("lastname").value;
+            var Email = document.getElementById("email").value;
+            var Phone = document.getElementById("mobile").value;
+            var Gender = document.getElementById("gender").value;
+            var Dob = document.getElementById("dob").value;
 
-      // function convertDateFormat(dateString) {
-      //       var [day, month, year] = dateString.split("-");
-      //       return `${year}-${month}-${day}`;
-      //    }
 
-      //   var dobInput = dob;
-      //   var formattedDob = convertDateFormat(dobInput);
+        function convertDateFormat(dateString) {
+            var [day, month, year] = dateString.split("-");
+            return `${year}-${month}-${day}`;
+         }
 
-      //   webengage.Login(userid);
-      //   webengage.user.setAttribute('we_email', email);
-      //   //webengage.user.setAttribute('we_birth_date', formattedDob);
-      //   webengage.user.setAttribute('we_phone', phone);
-      //   webengage.user.setAttribute('we_first_name', firstname);
-      //   webengage.user.setAttribute('we_last_name', lastname);
-      //   webengage.user.setAttribute('we_whatsapp_opt_in', true); 
-        
+        var dobInput = dob;
+        var formattedDob = convertDateFormat(dobInput);
+        console.log(formattedDob);
+
+        alert(Firstname);
+
+
+        // webengage.Login(userid);
+        // webengage.user.setAttribute('we_email', email);
+        // webengage.user.setAttribute('we_birth_date', formattedDob);
+        // webengage.user.setAttribute('we_phone', phone);
+        // webengage.user.setAttribute('we_first_name', firstname);
+        // webengage.user.setAttribute('we_last_name', lastname);
+        // webengage.user.setAttribute('we_whatsapp_opt_in', true); 
   }
-        </script>
+    </script>
     </div>
-    
-        
-
 </body>
 </html>
