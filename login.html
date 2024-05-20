@@ -56,14 +56,14 @@
             <input class="username-input" type="text" placeholder="Enter the Company Name" id ="company" required/>  
             
         </div>
-            <button class="login-button" onClick="Login()">Login</button>
+            <button class="login-button" onClick="Login(event)">Login</button>
         </form>
         <div>
         </div>
         <script>
 
-function Login() {
-
+function Login(event) {
+            event.preventDefault();
             var Userid = document.getElementById("userid").value;
             var Firstname = document.getElementById("firstname").value;
             var Lastname = document.getElementById("lastname").value;
