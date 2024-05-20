@@ -56,13 +56,13 @@
             <input class="username-input" type="text" placeholder="Enter the Company Name" id ="company" required/>  
             
         </div>
-            <button class="login-button" onClick="Login(event)">Login</button>
+            <button class="login-button" onClick="user(event)">Login</button>
         </form>
         <div>
         </div>
         <script>
 
-function Login(event) {
+function user(event) {
             event.preventDefault();
             var Userid = document.getElementById("userid").value;
             var Firstname = document.getElementById("firstname").value;
@@ -76,12 +76,12 @@ function Login(event) {
 
 
         webengage.Login(Userid);
-        webengage.user.setAttribute('we_email', Email);
-        webengage.user.setAttribute('we_birth_date', Dob);
-        webengage.user.setAttribute('we_phone', Phone);
-        webengage.user.setAttribute('we_first_name', Firstname);
-        webengage.user.setAttribute('we_last_name', Lastname);
-        webengage.user.setAttribute('we_whatsapp_opt_in', true); 
+        // webengage.user.setAttribute('we_email', Email);
+        // webengage.user.setAttribute('we_birth_date', Dob);
+        // webengage.user.setAttribute('we_phone', Phone);
+        // webengage.user.setAttribute('we_first_name', Firstname);
+        // webengage.user.setAttribute('we_last_name', Lastname);
+        // webengage.user.setAttribute('we_whatsapp_opt_in', true); 
   }
     </script>
     </div>
