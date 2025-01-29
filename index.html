@@ -50,16 +50,6 @@
   webengage.init('in~311c46c7');
 </script>
 
-    <script>
-    // Get the JSON data
-    let data = webengage.state.getForever();
-    // Extract the luid
-    let luid = data.luid;
-    // Log it in the console
-    console.log("LUID:", luid);
-    </script>
-
-
 </head>
 <body>
     <section class="header">
@@ -114,6 +104,15 @@
     function  hideMenu(){
         navlinks.style.right="-200px";
     }
+
+    // Get the JSON data
+    let data = webengage.state.getForever();
+    // Extract the luid
+    let luid = data.luid;
+    // Log it in the console
+    console.log("LUID:", luid);
+
+
 
 </script>    
 </body>
