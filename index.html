@@ -50,6 +50,24 @@
   webengage.init('in~311c46c7');
 </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Get the JSON data
+    let data = webengage.state.getForever();
+
+    // Extract the luid
+    let luid = data.luid;
+
+    // Display it on the webpage
+    let luidElement = document.createElement("p");
+    luidElement.textContent = "LUID: " + luid;
+    document.body.appendChild(luidElement);
+
+    // Log it in the console
+    console.log("LUID:", luid);
+});
+        </script>
+
 
 </head>
 <body>
